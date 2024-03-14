@@ -1,15 +1,10 @@
 {
-  "name": "@repo/ui",
+  "name": "@repo/scripts-template",
   "version": "0.0.0",
   "private": true,
-  "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
-  },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component"
+    "start": "yarn run ts-node ./src/index.ts"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
