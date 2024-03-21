@@ -1,0 +1,227 @@
+[
+  {
+    "t": {
+      "$date": "2024-03-21T04:20:16.475+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn317915",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.wallet",
+      "appName": "wallet-platform-long-process",
+      "command": {
+        "find": "wallet",
+        "filter": {
+          "_id": {
+            "$in": [
+              {
+                "$oid": "5bd2583e10f2fea87791cdf0"
+              },
+              {
+                "$oid": "5e8d390df9cdbb20004e5698"
+              },
+              {
+                "$oid": "616389c1b74ce60366c0c4d1"
+              },
+              {
+                "$oid": "5ef0d1f00d4dd0af0045efeb"
+              },
+              {
+                "$oid": "63925b06a0aac30007eff697"
+              },
+              {
+                "$oid": "658194c93594b230df5da3b8"
+              },
+              {
+                "$oid": "615c9c002723730356e1c8a8"
+              },
+              {
+                "$oid": "5bd2583f10f2fea87791cf09"
+              },
+              {
+                "$oid": "6501169129724a00074f57a5"
+              },
+              {
+                "$oid": "5bd2625910f2fea8779de721"
+              },
+              {
+                "$oid": "5ef0d16a1e6cc93400ee3b95"
+              },
+              {
+                "$oid": "6502a1a11c47b90007c919a7"
+              },
+              {
+                "$oid": "619ebefb4bd6d10007930d61"
+              },
+              {
+                "$oid": "5c35888d8b27b3ca293dc68d"
+              },
+              {
+                "$oid": "5e414136f6decc5f00fe2d3c"
+              },
+              {
+                "$oid": "5e7d9f3d36e62934079f8076"
+              },
+              {
+                "$oid": "628d32d1b395050007dfd0e6"
+              },
+              {
+                "$oid": "5bc5e4e1f1ec970e1dbdec7f"
+              },
+              {
+                "$oid": "654e33508f167400077f7ee3"
+              },
+              {
+                "$oid": "5afd81a4be48916464e2c746"
+              },
+              {
+                "$oid": "654b397157f4460007da6dfe"
+              },
+              {
+                "$oid": "61324ee8771ef0001d0e4d9f"
+              },
+              {
+                "$oid": "5bd2583e10f2fea87791cdf3"
+              },
+              {
+                "$oid": "6415f70528aaad000710541b"
+              },
+              {
+                "$oid": "5d08d212d942ef1b56941ccd"
+              },
+              {
+                "$oid": "603d237ae688230075d622be"
+              },
+              {
+                "$oid": "5a2f34d208ec2d380792e16e"
+              },
+              {
+                "$oid": "5bd20fd5ebcff0ab47c3328f"
+              },
+              {
+                "$oid": "6017ea780fd89d0076edad3c"
+              },
+              {
+                "$oid": "5fa47df3fa0ef00147c1bb46"
+              },
+              {
+                "$oid": "5b52f32ad224cb3e07207f85"
+              },
+              {
+                "$oid": "6017f09377134f00240fad0b"
+              },
+              {
+                "$oid": "5ea493dd0e50dc2000da432e"
+              },
+              {
+                "$oid": "5d95834abe681c0c085b25d4"
+              },
+              {
+                "$oid": "651243283ddc0500074d921f"
+              },
+              {
+                "$oid": "6503627764c9c20007db4571"
+              },
+              {
+                "$oid": "5bd20fd5ebcff0ab47c33290"
+              },
+              {
+                "$oid": "5e8d34ba3f43831f00d7d884"
+              },
+              {
+                "$oid": "63dafe1d4b215f0007614458"
+              },
+              {
+                "$oid": "5ecee536e49d192d0027402c"
+              },
+              {
+                "$oid": "6159eb3318f993002bcb0ad0"
+              },
+              {
+                "$oid": "65871cd65cf0ed390229e62c"
+              },
+              {
+                "$oid": "5ac61063e86c3f5207749990"
+              }
+            ]
+          }
+        },
+        "projection": {
+          "_id": 1,
+          "users": 1,
+          "enterprise": 1,
+          "type": 1
+        },
+        "lsid": {
+          "id": {
+            "$uuid": "2d339748-15d5-49e7-98fc-4c0a9e29a277"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1710994814,
+              "i": 114
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "vM9NAewHKkYdjhH6iqYCePaGAtQ=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { _id: 1 }",
+      "keysExamined": 85,
+      "docsExamined": 43,
+      "cursorExhausted": true,
+      "numYields": 1,
+      "nreturned": 43,
+      "queryHash": "3C3351F6",
+      "planCacheKey": "3C1121E4",
+      "reslen": 23305,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 2
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 2
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 1104643,
+          "timeReadingMicros": 9764
+        }
+      },
+      "remote": "10.28.126.48:55360",
+      "protocol": "op_msg",
+      "durationMillis": 1481
+    }
+  }
+]

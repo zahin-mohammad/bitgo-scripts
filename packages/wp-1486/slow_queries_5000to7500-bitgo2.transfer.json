@@ -1,0 +1,101 @@
+[
+  {
+    "t": {
+      "$date": "2024-03-21T10:28:42.669+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn11868",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transfer",
+      "appName": "wallet-platform-nocluster",
+      "command": {
+        "find": "transfer",
+        "filter": {
+          "wallet": {
+            "$oid": "616389c1b74ce60366c0c4d1"
+          },
+          "date": {
+            "$gte": {
+              "$date": "2024-03-20T10:28:36.104Z"
+            }
+          }
+        },
+        "projection": {
+          "value": 1
+        },
+        "limit": 100,
+        "lsid": {
+          "id": {
+            "$uuid": "6128eac8-f06a-4365-a32c-240d3c3b9dd2"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1711016915,
+              "i": 179
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "fHpNEP3WF0aPI2RbXrzPhA6BSQI=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { wallet: 1, date: 1, state: 1 }",
+      "keysExamined": 100,
+      "docsExamined": 100,
+      "fromMultiPlanner": true,
+      "cursorExhausted": true,
+      "numYields": 370,
+      "nreturned": 100,
+      "queryHash": "1FD5A0D3",
+      "planCacheKey": "A4435C16",
+      "reslen": 3919,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 371
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 371
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 37185787,
+          "timeReadingMicros": 6361603
+        }
+      },
+      "remote": "10.28.126.48:19030",
+      "protocol": "op_msg",
+      "durationMillis": 6515
+    }
+  }
+]

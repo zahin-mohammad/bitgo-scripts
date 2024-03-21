@@ -1,0 +1,416 @@
+[
+  {
+    "t": {
+      "$date": "2024-03-19T22:17:50.536+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn5548952",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.sendqueue",
+      "appName": "wallet-platform-nocluster",
+      "command": {
+        "find": "sendqueue",
+        "filter": {
+          "wallet": {
+            "$oid": "6163a58a8f61390196a0053a"
+          },
+          "state": {
+            "$in": [
+              "pending",
+              "attempted",
+              "done"
+            ]
+          }
+        },
+        "sort": {
+          "_id": -1
+        },
+        "limit": 1,
+        "singleBatch": true,
+        "batchSize": 1,
+        "lsid": {
+          "id": {
+            "$uuid": "7a954c29-6f6e-446e-9c9c-ee1737f083be"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1710886666,
+              "i": 191
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "m79MvY0DA/48OJKAc6EYZ10HSko=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { _id: 1 }",
+      "keysExamined": 4179,
+      "docsExamined": 4179,
+      "fromMultiPlanner": true,
+      "cursorExhausted": true,
+      "numYields": 308,
+      "nreturned": 1,
+      "queryHash": "4E31E28F",
+      "planCacheKey": "20E7EEDC",
+      "reslen": 2396,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 309
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 309
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 232440836,
+          "timeReadingMicros": 3264976
+        }
+      },
+      "remote": "10.28.164.113:54557",
+      "protocol": "op_msg",
+      "durationMillis": 3475
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-20T17:48:58.178+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn107996",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.sendqueue",
+      "appName": "wallet-platform-nocluster",
+      "command": {
+        "find": "sendqueue",
+        "filter": {
+          "wallet": {
+            "$oid": "6163a58a8f61390196a0053a"
+          },
+          "state": {
+            "$in": [
+              "pending",
+              "attempted",
+              "done"
+            ]
+          }
+        },
+        "sort": {
+          "_id": -1
+        },
+        "limit": 1,
+        "singleBatch": true,
+        "batchSize": 1,
+        "lsid": {
+          "id": {
+            "$uuid": "13d00be2-5898-4fa4-99f3-585fc8f9c3d5"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1710956933,
+              "i": 22
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "U4FpNbZzRaFB7maEM9bdxlscoGU=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { _id: 1 }",
+      "keysExamined": 6747,
+      "docsExamined": 6747,
+      "fromMultiPlanner": true,
+      "cursorExhausted": true,
+      "numYields": 436,
+      "nreturned": 1,
+      "queryHash": "4E31E28F",
+      "planCacheKey": "20E7EEDC",
+      "reslen": 2672,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 437
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 437
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 332824153,
+          "timeReadingMicros": 4603245
+        }
+      },
+      "remote": "10.28.126.48:45613",
+      "protocol": "op_msg",
+      "durationMillis": 4876
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T03:32:36.734+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn303847",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.sendqueue",
+      "appName": "wallet-platform-nocluster",
+      "command": {
+        "find": "sendqueue",
+        "filter": {
+          "wallet": {
+            "$oid": "6163a58a8f61390196a0053a"
+          },
+          "state": {
+            "$in": [
+              "pending",
+              "attempted",
+              "done"
+            ]
+          }
+        },
+        "sort": {
+          "_id": -1
+        },
+        "limit": 1,
+        "singleBatch": true,
+        "batchSize": 1,
+        "lsid": {
+          "id": {
+            "$uuid": "b5987fcd-4293-4a09-bfe5-40ca0cf574b6"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1710991952,
+              "i": 152
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "rlc5B8wAzjBGn9K7QXPuEEJX1T4=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { _id: 1 }",
+      "keysExamined": 4632,
+      "docsExamined": 4632,
+      "fromMultiPlanner": true,
+      "replanned": true,
+      "replanReason": "cached plan was less efficient than expected: expected trial execution to take 14 works but it took at least 140 works",
+      "cursorExhausted": true,
+      "numYields": 376,
+      "nreturned": 1,
+      "queryHash": "4E31E28F",
+      "planCacheKey": "20E7EEDC",
+      "reslen": 1702,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 377
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 377
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 275786364,
+          "timeReadingMicros": 3993094
+        }
+      },
+      "remote": "10.28.126.48:39413",
+      "protocol": "op_msg",
+      "durationMillis": 4225
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T12:12:37.278+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn19092",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.sendqueue",
+      "appName": "wallet-platform-nocluster",
+      "command": {
+        "find": "sendqueue",
+        "filter": {
+          "wallet": {
+            "$oid": "6163a58a8f61390196a0053a"
+          },
+          "state": {
+            "$in": [
+              "pending",
+              "attempted",
+              "done"
+            ]
+          }
+        },
+        "sort": {
+          "_id": -1
+        },
+        "limit": 1,
+        "singleBatch": true,
+        "batchSize": 1,
+        "lsid": {
+          "id": {
+            "$uuid": "6c68f690-3f57-46f8-ad14-0182b51705c4"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1711023154,
+              "i": 29
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "hYkr0nBvr1aZBPACiY1B/lC4SXQ=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { _id: 1 }",
+      "keysExamined": 3840,
+      "docsExamined": 3840,
+      "fromMultiPlanner": true,
+      "cursorExhausted": true,
+      "numYields": 278,
+      "nreturned": 1,
+      "queryHash": "4E31E28F",
+      "planCacheKey": "20E7EEDC",
+      "reslen": 1684,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 279
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 279
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 203579294,
+          "timeReadingMicros": 2924665
+        }
+      },
+      "remote": "10.28.126.48:51982",
+      "protocol": "op_msg",
+      "durationMillis": 3097
+    }
+  }
+]

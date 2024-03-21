@@ -1,0 +1,342 @@
+[
+  {
+    "t": {
+      "$date": "2024-03-20T08:19:18.435+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn5792096",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactiongroups",
+      "appName": "wallet-platform-internal-indexerv2-worker",
+      "command": {
+        "find": "transactiongroups",
+        "filter": {
+          "coin": "sol",
+          "wallet": {
+            "$oid": "63059ed34838d300083ad4bf"
+          },
+          "txids": {
+            "$in": [
+              "4R8LJqYZ5BiZpMLbw9HPpj5FDXtGdfSUG8U58xDMyDf9jCaGWErowhQ15Dvrat13rH5BEirExGC2fcB8x4ACcHbC"
+            ]
+          }
+        },
+        "projection": {
+          "_id": -1
+        },
+        "limit": 1,
+        "singleBatch": true,
+        "batchSize": 1,
+        "lsid": {
+          "id": {
+            "$uuid": "a17cb8bf-9634-4fa0-b863-df5aebd50091"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1710922757,
+              "i": 159
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "pu6EWeqIu6t4J25LTkFccNwYN9U=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2"
+      },
+      "planSummary": "IXSCAN { coin: 1, wallet: 1 }",
+      "keysExamined": 11528,
+      "docsExamined": 11528,
+      "fromMultiPlanner": true,
+      "replanned": true,
+      "replanReason": "cached plan was less efficient than expected: expected trial execution to take 1 works but it took at least 10 works",
+      "cursorExhausted": true,
+      "numYields": 98,
+      "nreturned": 0,
+      "queryHash": "6CFF12AB",
+      "planCacheKey": "7AA36096",
+      "reslen": 238,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 99
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 99
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 120049673,
+          "timeReadingMicros": 913478
+        }
+      },
+      "remote": "10.28.164.113:31860",
+      "protocol": "op_msg",
+      "durationMillis": 1024
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-20T10:43:27.079+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn5840696",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactiongroups",
+      "appName": "wallet-platform-internal-indexerv2-worker",
+      "command": {
+        "find": "transactiongroups",
+        "filter": {
+          "coin": "sol",
+          "wallet": {
+            "$oid": "63059ed34838d300083ad4bf"
+          },
+          "txids": {
+            "$in": [
+              "4YCjVhjYjxghCN5x2q5cQaeDXhMGjzmyCkjZqynUUkp7zEHLUZGFmMTqKh5v8vLu3EvWvpwVggHWirobuzYp2yBo"
+            ]
+          }
+        },
+        "projection": {
+          "_id": -1
+        },
+        "limit": 1,
+        "singleBatch": true,
+        "batchSize": 1,
+        "lsid": {
+          "id": {
+            "$uuid": "d54b00c1-c8a5-448c-af2f-71307813b1d0"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1710931405,
+              "i": 326
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "qAqaZ9sbUqzrFGVMtkv0xztJEBs=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2"
+      },
+      "planSummary": "IXSCAN { coin: 1, wallet: 1 }",
+      "keysExamined": 11535,
+      "docsExamined": 11535,
+      "fromMultiPlanner": true,
+      "replanned": true,
+      "replanReason": "cached plan was less efficient than expected: expected trial execution to take 1 works but it took at least 10 works",
+      "cursorExhausted": true,
+      "numYields": 118,
+      "nreturned": 0,
+      "queryHash": "6CFF12AB",
+      "planCacheKey": "7AA36096",
+      "reslen": 238,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 119
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 119
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 120028393,
+          "timeReadingMicros": 1119848
+        }
+      },
+      "remote": "10.28.164.113:52346",
+      "protocol": "op_msg",
+      "durationMillis": 1228
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T01:57:26.206+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn176088",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactiongroups",
+      "command": {
+        "find": "transactiongroups",
+        "filter": {
+          "coin": "sol",
+          "wallet": {
+            "$oid": "63059ed34838d300083ad4bf"
+          },
+          "txids": {
+            "$in": [
+              "2ZV54EMFSurVSpGdf2MGbdkxs6Vbyg6hoTqqXhrSa8cArgDqHeNkpa9tncYfeTayjeFDnRRxNeR4Kqsi6QUgx7zW"
+            ]
+          }
+        },
+        "limit": 1,
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 85,
+      "queryHash": "7E338E6F",
+      "planCacheKey": "ACFA0D04",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 86
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 86
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.164.113:12971",
+      "protocol": "op_msg",
+      "durationMillis": 1003
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T11:17:16.015+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3332",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactiongroups",
+      "command": {
+        "find": "transactiongroups",
+        "filter": {
+          "coin": "sol",
+          "wallet": {
+            "$oid": "63059ed34838d300083ad4bf"
+          },
+          "txids": {
+            "$in": [
+              "4m8CFVkAW1CsmLcTecVQZerxgan3U7TqvE4S6M9LHZTJE2sCNkGpxCUEtyeooPm7NbBCaQr71EUsig9FtmFQm6SP"
+            ]
+          }
+        },
+        "limit": 1,
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 95,
+      "queryHash": "7E338E6F",
+      "planCacheKey": "ACFA0D04",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 96
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 96
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.107.223:51267",
+      "protocol": "op_msg",
+      "durationMillis": 1000
+    }
+  }
+]

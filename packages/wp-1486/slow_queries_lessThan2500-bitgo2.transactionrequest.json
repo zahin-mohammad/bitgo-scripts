@@ -1,0 +1,1660 @@
+[
+  {
+    "t": {
+      "$date": "2024-03-19T22:37:48.235+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3334819",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "intents.sequenceId": {
+            "$in": [
+              "6502748680-0"
+            ]
+          },
+          "walletId": {
+            "$in": [
+              {
+                "$oid": "63059ed34838d300083ad4bf"
+              }
+            ]
+          },
+          "enterpriseId": {
+            "$eq": {
+              "$oid": "5f4d2156eac7800019dc54ab"
+            }
+          }
+        },
+        "sort": {
+          "_id": 1
+        },
+        "limit": 26,
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "planSummary": "IXSCAN { _id: 1 }",
+      "numYields": 203,
+      "queryHash": "C8357C38",
+      "planCacheKey": "FE0AEEC4",
+      "ok": 0,
+      "errMsg": "Executor error during find command :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 204
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 204
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.107.223:22292",
+      "protocol": "op_msg",
+      "durationMillis": 1008
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T04:59:27.336+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn223003",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "walletId": {
+            "$in": [
+              {
+                "$oid": "63059ed34838d300083ad4bf"
+              }
+            ]
+          },
+          "latest": true,
+          "enterpriseId": {
+            "$eq": {
+              "$oid": "5f4d2156eac7800019dc54ab"
+            }
+          },
+          "_id": {
+            "$lt": {
+              "$oid": "65fade9d04d51b0643c9d672"
+            }
+          }
+        },
+        "sort": {
+          "createdDate": -1
+        },
+        "limit": 26,
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 80,
+      "queryHash": "6495C94B",
+      "planCacheKey": "537C9CBE",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 81
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 81
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.107.223:64520",
+      "protocol": "op_msg",
+      "durationMillis": 1010
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-19T22:37:48.235+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3334819",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "intents.sequenceId": {
+            "$in": [
+              "6502748680-0"
+            ]
+          },
+          "walletId": {
+            "$in": [
+              {
+                "$oid": "63059ed34838d300083ad4bf"
+              }
+            ]
+          },
+          "enterpriseId": {
+            "$eq": {
+              "$oid": "5f4d2156eac7800019dc54ab"
+            }
+          }
+        },
+        "sort": {
+          "_id": 1
+        },
+        "limit": 26,
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "planSummary": "IXSCAN { _id: 1 }",
+      "numYields": 203,
+      "queryHash": "C8357C38",
+      "planCacheKey": "FE0AEEC4",
+      "ok": 0,
+      "errMsg": "Executor error during find command :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 204
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 204
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.107.223:22292",
+      "protocol": "op_msg",
+      "durationMillis": 1008
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T04:59:27.336+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn223003",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "walletId": {
+            "$in": [
+              {
+                "$oid": "63059ed34838d300083ad4bf"
+              }
+            ]
+          },
+          "latest": true,
+          "enterpriseId": {
+            "$eq": {
+              "$oid": "5f4d2156eac7800019dc54ab"
+            }
+          },
+          "_id": {
+            "$lt": {
+              "$oid": "65fade9d04d51b0643c9d672"
+            }
+          }
+        },
+        "sort": {
+          "createdDate": -1
+        },
+        "limit": 26,
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 80,
+      "queryHash": "6495C94B",
+      "planCacheKey": "537C9CBE",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 81
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 81
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.107.223:64520",
+      "protocol": "op_msg",
+      "durationMillis": 1010
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-19T18:53:07.712+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3248605",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 89,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 90
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 90
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.107.223:49335",
+      "protocol": "op_msg",
+      "durationMillis": 1010
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-19T19:58:58.989+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3274357",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 82,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 83
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 83
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.107.223:42681",
+      "protocol": "op_msg",
+      "durationMillis": 1006
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-19T23:44:59.221+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3347607",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 88,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 89
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 89
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.107.223:23706",
+      "protocol": "op_msg",
+      "durationMillis": 1001
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-20T04:08:31.635+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3441196",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 86,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 87
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 87
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.126.48:39608",
+      "protocol": "op_msg",
+      "durationMillis": 1007
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-20T07:08:48.668+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3473133",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 81,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 82
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 82
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.126.48:28164",
+      "protocol": "op_msg",
+      "durationMillis": 1007
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-20T10:44:28.067+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn3547804",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 85,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 86
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 86
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.126.48:30269",
+      "protocol": "op_msg",
+      "durationMillis": 1002
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T10:36:44.289+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn13375",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "appName": "wallet-platform-internal-nocluster",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "lsid": {
+          "id": {
+            "$uuid": "ae5095ad-c91b-4255-956d-87ddb92c6cfe"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1711017402,
+              "i": 114
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "ppdmDQrfdHOSELr2Uym0LCViPts=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { latest: 1, state: 1, enterpriseId: 1 }, IXSCAN { latest: 1, state: 1, enterpriseId: 1 }",
+      "keysExamined": 36946,
+      "docsExamined": 36940,
+      "cursorExhausted": true,
+      "numYields": 171,
+      "nreturned": 0,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "reslen": 239,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 172
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 172
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 989540690,
+          "timeReadingMicros": 925179
+        }
+      },
+      "remote": "10.28.126.48:6565",
+      "protocol": "op_msg",
+      "durationMillis": 1584
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T10:44:40.561+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn18150",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "appName": "wallet-platform-internal-nocluster",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "lsid": {
+          "id": {
+            "$uuid": "7795ce83-d815-448d-b393-1583fc8133cd"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1711017878,
+              "i": 327
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "J4v5OwaLKSSdZ9OqUtXn6Q25zfc=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { latest: 1, state: 1, enterpriseId: 1 }, IXSCAN { latest: 1, state: 1, enterpriseId: 1 }",
+      "keysExamined": 36947,
+      "docsExamined": 36941,
+      "cursorExhausted": true,
+      "numYields": 175,
+      "nreturned": 0,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "reslen": 239,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 176
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 176
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 668044837,
+          "timeReadingMicros": 982727
+        }
+      },
+      "remote": "10.28.126.48:43221",
+      "protocol": "op_msg",
+      "durationMillis": 1620
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T11:00:41.428+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn22097",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "appName": "wallet-platform-internal-nocluster",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "lsid": {
+          "id": {
+            "$uuid": "024db041-5ca9-4f10-b04f-67b39cbfc1d1"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1711018839,
+              "i": 206
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "zsLQku8tmPODR9RxiUE+nMQo6v8=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { latest: 1, state: 1, enterpriseId: 1 }, IXSCAN { latest: 1, state: 1, enterpriseId: 1 }",
+      "keysExamined": 36946,
+      "docsExamined": 36940,
+      "cursorExhausted": true,
+      "numYields": 171,
+      "nreturned": 0,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "reslen": 239,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 172
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 172
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 597386893,
+          "timeReadingMicros": 793578
+        }
+      },
+      "remote": "10.28.126.48:31088",
+      "protocol": "op_msg",
+      "durationMillis": 1446
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T11:08:41.060+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn1187",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "batchSize": 1,
+        "singleBatch": true,
+        "maxTimeMS": 1000,
+        "$readPreference": {
+          "mode": "secondaryPreferred"
+        },
+        "readConcern": {
+          "level": "local"
+        },
+        "$db": "bitgo2"
+      },
+      "numYields": 86,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "ok": 0,
+      "errMsg": "error while multiplanner was selecting best plan :: caused by :: operation exceeded time limit",
+      "errName": "MaxTimeMSExpired",
+      "errCode": 50,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 87
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 87
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "clientSupplied"
+      },
+      "remote": "10.28.164.113:11261",
+      "protocol": "op_msg",
+      "durationMillis": 1008
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T12:58:44.746+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn22252",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "appName": "wallet-platform-internal-nocluster",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "lsid": {
+          "id": {
+            "$uuid": "b7ac73df-4e0a-4bcc-9170-d89858dcf556"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1711025921,
+              "i": 193
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "5VE1YAE0/E1XRHyl9ObdKm+SEeA=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { latest: 1, state: 1, enterpriseId: 1 }, IXSCAN { latest: 1, state: 1, enterpriseId: 1 }",
+      "keysExamined": 36948,
+      "docsExamined": 36942,
+      "cursorExhausted": true,
+      "numYields": 139,
+      "nreturned": 0,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "reslen": 239,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 140
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 140
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 374636045,
+          "timeReadingMicros": 490577
+        }
+      },
+      "remote": "10.28.126.48:62012",
+      "protocol": "op_msg",
+      "durationMillis": 1104
+    }
+  },
+  {
+    "t": {
+      "$date": "2024-03-21T13:09:00.535+00:00"
+    },
+    "s": "I",
+    "c": "COMMAND",
+    "id": 51803,
+    "ctx": "conn33003",
+    "msg": "Slow query",
+    "attr": {
+      "type": "command",
+      "ns": "bitgo2.transactionrequest",
+      "appName": "wallet-platform-internal-nocluster",
+      "command": {
+        "find": "transactionrequest",
+        "filter": {
+          "$or": [
+            {
+              "enterpriseId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            },
+            {
+              "walletId": {
+                "$in": [
+                  {
+                    "$oid": "616389c1b74ce60366c0c4d1"
+                  }
+                ]
+              },
+              "apiVersion": "full",
+              "state": {
+                "$in": [
+                  "initialized",
+                  "pendingApproval",
+                  "pendingDelivery"
+                ]
+              },
+              "latest": true,
+              "transactions.unsignedTx.parsedTx.outputs.coinName": "btc"
+            }
+          ]
+        },
+        "lsid": {
+          "id": {
+            "$uuid": "bf17939a-679d-4252-a9ed-5bff45f6bd86"
+          }
+        },
+        "$clusterTime": {
+          "clusterTime": {
+            "$timestamp": {
+              "t": 1711026539,
+              "i": 86
+            }
+          },
+          "signature": {
+            "hash": {
+              "$binary": {
+                "base64": "K4jafYYumoV21n1SPzPfXOEjOQs=",
+                "subType": "0"
+              }
+            },
+            "keyId": 7293728919654498000
+          }
+        },
+        "$db": "bitgo2",
+        "$readPreference": {
+          "mode": "primaryPreferred",
+          "maxStalenessSeconds": 180
+        }
+      },
+      "planSummary": "IXSCAN { latest: 1, state: 1, enterpriseId: 1 }, IXSCAN { latest: 1, state: 1, enterpriseId: 1 }",
+      "keysExamined": 36948,
+      "docsExamined": 36942,
+      "cursorExhausted": true,
+      "numYields": 134,
+      "nreturned": 0,
+      "queryHash": "1051050E",
+      "planCacheKey": "13D27900",
+      "reslen": 239,
+      "locks": {
+        "FeatureCompatibilityVersion": {
+          "acquireCount": {
+            "r": 135
+          }
+        },
+        "Global": {
+          "acquireCount": {
+            "r": 135
+          }
+        },
+        "Mutex": {
+          "acquireCount": {
+            "r": 1
+          }
+        }
+      },
+      "readConcern": {
+        "level": "local",
+        "provenance": "implicitDefault"
+      },
+      "storage": {
+        "data": {
+          "bytesRead": 302735799,
+          "timeReadingMicros": 390168
+        }
+      },
+      "remote": "10.28.126.48:20943",
+      "protocol": "op_msg",
+      "durationMillis": 1026
+    }
+  }
+]
