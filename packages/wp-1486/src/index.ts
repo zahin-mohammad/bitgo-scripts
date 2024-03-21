@@ -33,6 +33,19 @@ async function main() {
       console.log("The file has been saved!");
     }
   );
+
+  const objectIds = Array.from(publicIds).map((publicId) => publicId.slice(0, 24));
+
+  fs.writeFile(
+    "objectIds.json",
+    JSON.stringify(objectIds, null, 2),
+    (err) => {
+      if (err) {
+        throw err;
+      }
+      console.log("The file has been saved!");
+    }
+  );
 }
 
 main().catch((err) => console.error(err));
