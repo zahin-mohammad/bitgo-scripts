@@ -1,0 +1,156 @@
+{
+    "_id" : "663d243680d2c7d385c60556",
+    "callChainId" : "f9d3f480-26d7-46e5-8879-0bb692ea2eaa",
+    "callChainType" : "TxRequestWithdrawal",
+    "events" : [ 
+        {
+            "startTime" : "2024-05-09T19:29:55.965Z",
+            "endTime" : "2024-05-09T19:29:58.287Z",
+            "metadata" : [ 
+                {
+                    "key" : "apiName",
+                    "value" : "v2.wallet.txrequest.create"
+                }, 
+                {
+                    "key" : "requestId",
+                    "value" : "0d669b3e6daa6ae57c43-0000"
+                }, 
+                {
+                    "key" : "txRequestState",
+                    "value" : "pendingDelivery"
+                }, 
+                {
+                    "key" : "traceId",
+                    "value" : "0ae64be46477333ce881f1e425c6ae83"
+                }
+            ]
+        }, 
+        {
+            "startTime" : "2024-05-09T19:29:59.255Z",
+            "endTime" : "2024-05-09T19:30:00.653Z",
+            "metadata" : [ 
+                {
+                    "key" : "apiName",
+                    "value" : "v2.wallet.txrequest.transaction.signatureshare.create"
+                }, 
+                {
+                    "key" : "requestId",
+                    "value" : "clvzn7kpz00rg0evl81j78n63"
+                }, 
+                {
+                    "key" : "txRequestState",
+                    "value" : "pendingDelivery"
+                }, 
+                {
+                    "key" : "traceId",
+                    "value" : "3008082cb66436af66409248d88b5a7b"
+                }
+            ]
+        }, 
+        {
+            "startTime" : "2024-05-09T19:30:02.026Z",
+            "endTime" : "2024-05-09T19:30:03.275Z",
+            "metadata" : [ 
+                {
+                    "key" : "apiName",
+                    "value" : "v2.wallet.txrequest.transaction.signatureshare.create"
+                }, 
+                {
+                    "key" : "requestId",
+                    "value" : "clvzn7mj300vs0ezyb7w2g4v1"
+                }, 
+                {
+                    "key" : "txRequestState",
+                    "value" : "pendingDelivery"
+                }, 
+                {
+                    "key" : "traceId",
+                    "value" : "62959d27d1a79209fe47b9848485c1c7"
+                }
+            ]
+        }, 
+        {
+            "startTime" : "2024-05-09T19:30:03.980Z",
+            "endTime" : "2024-05-09T19:30:04.551Z",
+            "metadata" : [ 
+                {
+                    "key" : "apiName",
+                    "value" : "v2.wallet.txrequest.transaction.signatureshare.create"
+                }, 
+                {
+                    "key" : "requestId",
+                    "value" : "clvzn7odi00o20ez73f87amyk"
+                }, 
+                {
+                    "key" : "txRequestState",
+                    "value" : "delivered"
+                }, 
+                {
+                    "key" : "traceId",
+                    "value" : "9f057bbe26393ce46b201094ab1ea674"
+                }
+            ]
+        }, 
+        {
+            "startTime" : "2024-05-09T19:30:15.862Z",
+            "endTime" : "2024-05-09T19:30:15.936Z",
+            "metadata" : [ 
+                {
+                    "key" : "apiName",
+                    "value" : "v2.internal.updatesendqitem"
+                }, 
+                {
+                    "key" : "requestId",
+                    "value" : "clvzn7xkj03gs0eq15llc6r39"
+                }, 
+                {
+                    "key" : "txRequestState",
+                    "value" : "delivered"
+                }, 
+                {
+                    "key" : "coin",
+                    "value" : "hteth"
+                }, 
+                {
+                    "key" : "keyCurve",
+                    "value" : "secp256k1"
+                }, 
+                {
+                    "key" : "traceId",
+                    "value" : "7b7f7e4a0089699373bc2d48757b509d"
+                }, 
+                {
+                    "key" : "sendQId",
+                    "value" : "663d243c80d2c7d385c60590"
+                }, 
+                {
+                    "key" : "sendQState",
+                    "value" : "attempted"
+                }
+            ]
+        }
+    ],
+    "metadata" : [ 
+        {
+            "key" : "walletId",
+            "value" : "663d21c080d2c7d385c5ffdd"
+        }, 
+        {
+            "key" : "enterpriseId",
+            "value" : "663096fde4ceceae15d6655a"
+        }, 
+        {
+            "key" : "walletType",
+            "value" : "hot"
+        }, 
+        {
+            "key" : "multisigType",
+            "value" : "tss"
+        }, 
+        {
+            "key" : "multisigTypeVersion",
+            "value" : "MPCv2"
+        }
+    ],
+    "__v" : 4
+}
