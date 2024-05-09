@@ -2,6 +2,7 @@
   "name": "bitgo-scripts",
   "private": true,
   "scripts": {
+    "create-script": "turbo gen workspace --copy @repo/scripts-template",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
