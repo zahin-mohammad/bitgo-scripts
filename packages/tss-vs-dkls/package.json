@@ -19,8 +19,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@bitgo/sdk-api": "^1.47.1",
-    "@bitgo/sdk-coin-eth": "^24.2.1",
-    "bitgo": "^38.4.2"
+    "@bitgo-beta/sdk-api": "1.6.1-alpha.136",
+    "@bitgo-beta/sdk-coin-eth": "2.4.1-alpha.136"
   }
 }

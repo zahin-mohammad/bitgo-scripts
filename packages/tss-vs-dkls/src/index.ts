@@ -1,11 +1,11 @@
 import dotenv from "dotenv";
 dotenv.config();
-import { BitGoAPI } from "@bitgo/sdk-api";
-import { Hteth } from "@bitgo/sdk-coin-eth";
+import { BitGoAPI } from "@bitgo-beta/sdk-api";
+import { Hteth } from "@bitgo-beta/sdk-coin-eth";
 import fs from "fs";
 import { promisify } from "util";
 import { z } from "zod";
-import tssWallet from "../tss_wallet.json";
+// import tssWallet from "../tss_wallet.json";
 import dklsWallet from "../dkls_wallet.json";
 
 const writeFile = promisify(fs.writeFile);
@@ -78,7 +78,8 @@ async function walletCreationLoop(tss: boolean, loop: number) {
 }
 
 async function signingLoop(tss: boolean, loop: number) {
-  const walletJson = tss ? tssWallet : dklsWallet;
+  // const walletJson = tss ? tssWallet : dklsWallet;
+  const walletJson = dklsWallet;
   const wallet = await bitgo
     .coin("hteth")
     .wallets()
@@ -127,9 +128,9 @@ async function main() {
   // await createWallet(true, true);
   // await createWallet(false, true);
   // await signingLoop(true, 10);
-  // await signingLoop(false, 10);
+  await signingLoop(false, 10);
   // await walletCreationLoop(true, 10);
-  await walletCreationLoop(false, 10);
+  // await walletCreationLoop(false, 10);
 }
 
 main().catch((err) => console.error(err));
