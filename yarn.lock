@@ -424,6 +424,29 @@
     typeforce "^1.11.3"
     varuint-bitcoin "^1.1.2"
 
+"@bitgo/abstract-eth@^21.5.0":
+  version "21.5.0"
+  resolved "https://registry.yarnpkg.com/@bitgo/abstract-eth/-/abstract-eth-21.5.0.tgz#89a125e50401bc44bcfb25da767813fed84d67d9"
+  integrity sha512-b5wwLoY/ldS1Ln+ISqNWypx+X9ka0hPEgoVlwCBGiC+GKXE/cHckL4tCqubJx2hLwN6d/wFmbm/puJEW5dhzoQ==
+  dependencies:
+    "@bitgo/sdk-core" "^26.14.0"
+    "@bitgo/sdk-lib-mpc" "^9.8.0"
+    "@bitgo/statics" "^48.14.0"
+    "@bitgo/utxo-lib" "^9.37.0"
+    "@ethereumjs/common" "^2.6.5"
+    "@ethereumjs/tx" "^3.3.0"
+    "@metamask/eth-sig-util" "^5.0.2"
+    bignumber.js "^9.1.1"
+    bn.js "^5.2.1"
+    debug "^3.1.0"
+    ethereumjs-abi "^0.6.5"
+    ethereumjs-util "7.1.5"
+    ethers "^5.1.3"
+    keccak "^3.0.3"
+    lodash "4.17.21"
+    secp256k1 "5.0.0"
+    superagent "^9.0.1"
+
 "@bitgo/blake2b-wasm@^3.2.3":
   version "3.2.3"
   resolved "https://registry.npmjs.org/@bitgo/blake2b-wasm/-/blake2b-wasm-3.2.3.tgz"
@@ -445,6 +468,18 @@
   integrity sha512-pD5f3LQVoCUOczQxGJcEAq3DfchVbdojJ5azikJE64WjV/zR5HkPQDgYcznbM+ou2xX3sbweN893brtYTCNtRw==
   dependencies:
     noble-bls12-381 "^0.7.2"
+
+"@bitgo/public-types@2.23.1":
+  version "2.23.1"
+  resolved "https://registry.yarnpkg.com/@bitgo/public-types/-/public-types-2.23.1.tgz#ed4816eaacd340357a5bbbccdfae0600c3320384"
+  integrity sha512-f9bVKHMDykYNpCtgcBFV8BP1pPo5K4RtAtNiaMYam4R6TZuIt0R0gcnuMfP+ot5efRQlhURQGduoK8R0mTbfoQ==
+  dependencies:
+    "@api-ts/io-ts-http" "1.0.0"
+    fp-ts "2.16.2"
+    io-ts "2.1.3"
+    io-ts-types "0.5.16"
+    monocle-ts "2.3.13"
+    newtype-ts "0.3.5"
 
 "@bitgo/public-types@2.8.0":
   version "2.8.0"
@@ -470,6 +505,28 @@
     monocle-ts "2.3.13"
     newtype-ts "0.3.5"
 
+"@bitgo/sdk-api@1.47.4":
+  version "1.47.4"
+  resolved "https://registry.yarnpkg.com/@bitgo/sdk-api/-/sdk-api-1.47.4.tgz#593c2ac4446c0a70b6a8d5f8fd3a470a293e33ab"
+  integrity sha512-1PyQXG1bW/edyRNrb74k0kdVHI+ueC+eWHZDxyFCkFQEKzizmvBr9Ee6zyQ0pxMrq5UNyelPYraKYzUOhg31WA==
+  dependencies:
+    "@bitgo/sdk-core" "^26.14.0"
+    "@bitgo/sjcl" "^1.0.1"
+    "@bitgo/unspents" "^0.47.3"
+    "@bitgo/utxo-lib" "^9.37.0"
+    "@types/superagent" "4.1.15"
+    bitcoinjs-message "npm:@bitgo-forks/bitcoinjs-message@1.0.0-master.2"
+    bluebird "^3.5.3"
+    browser-or-node "2.0.0"
+    debug "3.1.0"
+    eol "^0.5.0"
+    lodash "^4.17.15"
+    proxy-agent "6.4.0"
+    sanitize-html "^2.11"
+    secp256k1 "^4.0.2"
+    secrets.js-grempe "^1.1.0"
+    superagent "^9.0.1"
+
 "@bitgo/sdk-api@^1.45.4":
   version "1.45.4"
   resolved "https://registry.npmjs.org/@bitgo/sdk-api/-/sdk-api-1.45.4.tgz"
@@ -491,6 +548,66 @@
     secp256k1 "^4.0.2"
     secrets.js-grempe "^1.1.0"
     superagent "^9.0.1"
+
+"@bitgo/sdk-coin-eth@24.2.4":
+  version "24.2.4"
+  resolved "https://registry.yarnpkg.com/@bitgo/sdk-coin-eth/-/sdk-coin-eth-24.2.4.tgz#598b6f252ed575aa965be643a9652d03d03fa109"
+  integrity sha512-a8M67FE2Bwo8zuzSGxqPxqnNHyAVJ0JnKGvZ0mZqCNIFeOY94z7YLCcas/v8hBMTpwYftjIwEq/UtIiFQ8+/kA==
+  dependencies:
+    "@bitgo/abstract-eth" "^21.5.0"
+    "@bitgo/sdk-core" "^26.14.0"
+    "@bitgo/statics" "^48.14.0"
+    "@bitgo/utxo-lib" "^9.37.0"
+    "@ethereumjs/tx" "^3.3.0"
+    "@ethereumjs/util" "8.0.3"
+    bignumber.js "^9.1.1"
+    ethereumjs-abi "^0.6.5"
+    ethereumjs-util "7.1.5"
+    ethers "^5.1.3"
+    lodash "^4.17.14"
+    secp256k1 "5.0.0"
+    superagent "^9.0.1"
+
+"@bitgo/sdk-core@^26.14.0":
+  version "26.14.0"
+  resolved "https://registry.yarnpkg.com/@bitgo/sdk-core/-/sdk-core-26.14.0.tgz#3f26637c2a95ce82c6c4dd6a6c26b688e1cf5e00"
+  integrity sha512-WoMh/X+m3oadJr7a91Ko/ooIOpZnNbjo27iHNE1n3TCKoJNKkfbNG2InWtsp9jftxETOg+DE6E22+QugPyVq9g==
+  dependencies:
+    "@bitgo/bls-dkg" "^1.3.1"
+    "@bitgo/public-types" "2.23.1"
+    "@bitgo/sdk-lib-mpc" "^9.8.0"
+    "@bitgo/sjcl" "^1.0.1"
+    "@bitgo/statics" "^48.14.0"
+    "@bitgo/utxo-lib" "^9.37.0"
+    "@noble/secp256k1" "1.6.3"
+    "@stablelib/hex" "^1.0.0"
+    "@types/elliptic" "^6.4.12"
+    "@types/superagent" "4.1.15"
+    bech32 "^2.0.0"
+    big.js "^3.1.3"
+    bigint-crypto-utils "3.1.4"
+    bignumber.js "^9.1.1"
+    bitcoinjs-message "npm:@bitgo-forks/bitcoinjs-message@1.0.0-master.2"
+    bolt11 "^1.4.0"
+    bs58 "^4.0.1"
+    create-hmac "^1.1.7"
+    debug "^3.1.0"
+    elliptic "^6.5.2"
+    ethereumjs-util "7.1.5"
+    fp-ts "^2.12.2"
+    io-ts "2.1.3"
+    io-ts-types "0.5.16"
+    keccak "3.0.3"
+    libsodium-wrappers-sumo "^0.7.9"
+    lodash "^4.17.15"
+    noble-bls12-381 "0.7.2"
+    openpgp "5.10.1"
+    paillier-bigint "3.3.0"
+    secp256k1 "5.0.0"
+    strip-hex-prefix "^1.0.0"
+    superagent "^9.0.1"
+    tweetnacl "^1.0.3"
+    uuid "^8.3.2"
 
 "@bitgo/sdk-core@^26.9.0":
   version "26.9.0"
@@ -549,10 +666,35 @@
     paillier-bigint "3.3.0"
     secp256k1 "5.0.0"
 
+"@bitgo/sdk-lib-mpc@^9.8.0":
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/@bitgo/sdk-lib-mpc/-/sdk-lib-mpc-9.8.0.tgz#b4bd5a852ab8e98d95335bdae0d372e65c33a53b"
+  integrity sha512-SoHIpbuf7j1MsFXd69NFe2CswOYAxiR4S/KZqws2FH/RBXnwX4cXrRXlQq+MhrNaPHxPDbMWDEY3nzDknjwX1g==
+  dependencies:
+    "@noble/secp256k1" "1.6.3"
+    "@silencelaboratories/dkls-wasm-ll-node" "1.0.1-pre.3"
+    "@silencelaboratories/dkls-wasm-ll-web" "1.0.1-pre.3"
+    "@types/superagent" "4.1.15"
+    "@wasmer/wasi" "^1.2.2"
+    bigint-crypto-utils "3.1.4"
+    bigint-mod-arith "3.1.2"
+    cbor-x "1.5.9"
+    fp-ts "2.16.2"
+    io-ts "2.1.3"
+    libsodium-wrappers-sumo "^0.7.9"
+    openpgp "5.10.1"
+    paillier-bigint "3.3.0"
+    secp256k1 "5.0.0"
+
 "@bitgo/sjcl@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@bitgo/sjcl/-/sjcl-1.0.1.tgz"
   integrity sha512-dBICMzShC8gXdpSj9cvl4wl9Jkt4h14wt4XQ+/6V6qcC2IObyKRJfaG5TYUU6RvVknhPBPyBx9v84vNKODM5fQ==
+
+"@bitgo/statics@^48.14.0":
+  version "48.14.0"
+  resolved "https://registry.yarnpkg.com/@bitgo/statics/-/statics-48.14.0.tgz#484e70f28b62a19cf7010e7290c550d36cfe2318"
+  integrity sha512-QVGqa3VxS+JVd2BUbqDFdoc9MO9WfWhcIYU/sHo72/BslBVPjkR8EOQrl0vHpWHHD/EWlR2Z9OEetwpiOKtaNA==
 
 "@bitgo/statics@^48.8.1":
   version "48.8.1"
@@ -565,6 +707,16 @@
   integrity sha512-muJB2it/Qf1Tn75TJ5ZpNuOy5PYX4Hh8QxctbWpd/ezql3SE68gkD2lhjrLtZgdXgQCl6i4tyxZrE79vIM7++A==
   dependencies:
     "@bitgo/utxo-lib" "^9.36.0"
+    lodash "~4.17.21"
+    tcomb "~3.2.29"
+    varuint-bitcoin "^1.0.4"
+
+"@bitgo/unspents@^0.47.3":
+  version "0.47.3"
+  resolved "https://registry.yarnpkg.com/@bitgo/unspents/-/unspents-0.47.3.tgz#9150f2bb61ab8493b01e12f7714794a279a4cac7"
+  integrity sha512-hP2Z2wYq/DrZKKqUWDlhOYt0hQ9A+2WaRIlE+l7Yywm9aWVkxx1SRyOLV/yEIWgz3cK80+Jzl5db0PgetDxJYA==
+  dependencies:
+    "@bitgo/utxo-lib" "^9.37.0"
     lodash "~4.17.21"
     tcomb "~3.2.29"
     varuint-bitcoin "^1.0.4"
@@ -582,6 +734,30 @@
     bip32 "^3.0.1"
     bitcoin-ops "^1.3.0"
     bitcoinjs-lib "npm:@bitgo-forks/bitcoinjs-lib@7.1.0-master.7"
+    bn.js "^5.2.1"
+    bs58check "^2.1.2"
+    cashaddress "^1.1.0"
+    create-hash "^1.2.0"
+    create-hmac "^1.1.7"
+    ecpair "npm:@bitgo/ecpair@2.1.0-rc.0"
+    elliptic "^6.5.2"
+    fastpriorityqueue "^0.7.1"
+    typeforce "^1.11.3"
+    varuint-bitcoin "^1.1.2"
+
+"@bitgo/utxo-lib@^9.37.0":
+  version "9.37.0"
+  resolved "https://registry.yarnpkg.com/@bitgo/utxo-lib/-/utxo-lib-9.37.0.tgz#789b43a6db1663f327a9d2465d4d11c597b7df43"
+  integrity sha512-OaoccitEF+q509VwuIAYnaJxcuw37YiLLZoKVNDRFOC7A0sGjzCpZc3ccIhRg155YmUENIYr00cQA+TlnCAl/g==
+  dependencies:
+    "@bitgo/blake2b" "^3.2.4"
+    "@brandonblack/musig" "^0.0.1-alpha.0"
+    "@noble/secp256k1" "1.6.3"
+    bech32 "^2.0.0"
+    bip174 "npm:@bitgo-forks/bip174@3.1.0-master.4"
+    bip32 "^3.0.1"
+    bitcoin-ops "^1.3.0"
+    bitcoinjs-lib "npm:@bitgo-forks/bitcoinjs-lib@7.1.0-master.9"
     bn.js "^5.2.1"
     bs58check "^2.1.2"
     cashaddress "^1.1.0"
@@ -1980,15 +2156,6 @@ axe-core@=4.7.0:
   version "4.7.0"
   resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.7.0.tgz"
   integrity sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==
-
-axios@^1.6.8:
-  version "1.6.8"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.8.tgz#66d294951f5d988a00e87a0ffb955316a619ea66"
-  integrity sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==
-  dependencies:
-    follow-redirects "^1.15.6"
-    form-data "^4.0.0"
-    proxy-from-env "^1.1.0"
 
 axobject-query@^3.2.1:
   version "3.2.1"
@@ -3547,11 +3714,6 @@ flatted@^3.2.9:
   version "3.3.1"
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.3.1.tgz"
   integrity sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==
-
-follow-redirects@^1.15.6:
-  version "1.15.6"
-  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.6.tgz"
-  integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -6269,8 +6431,3 @@ zod@^3.23.5:
   version "3.23.5"
   resolved "https://registry.npmjs.org/zod/-/zod-3.23.5.tgz"
   integrity sha512-fkwiq0VIQTksNNA131rDOsVJcns0pfVUjHzLrNBiF/O/Xxb5lQyEXkhZWcJ7npWsYlvs+h0jFWXXy4X46Em1JA==
-
-zod@^3.23.8:
-  version "3.23.8"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
-  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
