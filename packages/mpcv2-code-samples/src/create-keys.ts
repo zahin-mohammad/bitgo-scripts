@@ -36,7 +36,6 @@ async function main() {
     multisigType: "tss",
     passphrase: env.PASSWORD,
     enterprise: env.ENTERPRISE_ID,
-    // walletVersion: 5,
   });
   console.log(keychains);
 }
