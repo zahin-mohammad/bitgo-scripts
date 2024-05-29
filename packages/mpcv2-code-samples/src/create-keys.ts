@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
-import { BitGoAPI } from "@bitgo-beta/sdk-api";
-import { Hteth } from "@bitgo-beta/sdk-coin-eth";
+import { BitGoAPI } from "@bitgo/sdk-api";
+import { Hteth } from "@bitgo/sdk-coin-eth";
 import { z } from "zod";
 
 const env = z
