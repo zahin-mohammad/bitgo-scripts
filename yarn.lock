@@ -568,7 +568,7 @@
     secp256k1 "5.0.0"
     superagent "^9.0.1"
 
-"@bitgo/sdk-core@^26.14.0":
+"@bitgo/sdk-core@26.14.0", "@bitgo/sdk-core@^26.14.0":
   version "26.14.0"
   resolved "https://registry.yarnpkg.com/@bitgo/sdk-core/-/sdk-core-26.14.0.tgz#3f26637c2a95ce82c6c4dd6a6c26b688e1cf5e00"
   integrity sha512-WoMh/X+m3oadJr7a91Ko/ooIOpZnNbjo27iHNE1n3TCKoJNKkfbNG2InWtsp9jftxETOg+DE6E22+QugPyVq9g==
