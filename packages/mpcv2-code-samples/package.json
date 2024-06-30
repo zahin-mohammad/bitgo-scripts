@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "start": "yarn run ts-node ./src/index.ts",
-    "start:createKeys": "yarn run ts-node ./src/create-keys.ts"
+    "start:createKeys": "yarn run ts-node ./src/create-keys.ts",
+    "start:send": "yarn run ts-node ./src/create-and-sign-transaction.ts"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",

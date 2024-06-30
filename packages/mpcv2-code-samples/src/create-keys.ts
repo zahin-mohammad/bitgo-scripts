@@ -28,16 +28,17 @@ async function auth() {
 
 async function main() {
   await auth();
-  const rest = await bitgo
-    .get(bitgo.microservicesUrl("/api/v2/tss/settings"))
-    .result();
-  console.log(JSON.stringify(rest, null, 2));
   const keychains = await coin.keychains().createMpc({
     multisigType: "tss",
     passphrase: env.PASSWORD,
     enterprise: env.ENTERPRISE_ID,
   });
   console.log(keychains);
+  /**
+   * Note: the userKeychain and backupKeychain have a very large encryptedPrv
+   * Note: there is a new field called "reducedEncryptedPrv" which is what exists on the key-card when the keys are created in the app
+   * Or if the result of this is passed into the @bitgo/key-card package
+   */
 }
 
 main().catch((err) => console.error(err));
